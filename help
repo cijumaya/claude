@@ -1,0 +1,49 @@
+salut  suite de la discution precedente 
+woocommerce , theme shoptimizer  on essaye de mettre en place  une  presenation des choix  tailles  / qty  pour une section wholesale qui va permettre a ceratin clients de pouvoir ajouter au panier   en un click   plusieur variations de tailles  
+
+tu m'as demandé te de donner le code du fichier qui gere le template d'affichage de la page  produit afin que tu puisses  juste changer  la portion de code  qui gere l'affichage des tailles  car tu avais proposer  un appel pour charger une nouvelle page complete  que tu m'avai codé (single-product-wholesale.php)   mais le soucis  c'est que toute la mise ne page etait cassé 
+J'ai cherché  mais je trouve pas ou est le template produit dans mon thème (quel fichier ?) afin de pouvoir te donner le code
+
+Salut ! Je comprends le problème. Pour le thème Shoptimizer, le fichier template de la page produit peut se trouver à plusieurs endroits. Voici comment le localiser :
+Emplacements possibles du template produit Shoptimizer :
+
+Dans le dossier du thème :
+
+wp-content/themes/shoptimizer/woocommerce/single-product.php
+wp-content/themes/shoptimizer/single-product.php
+
+
+Ou dans les templates WooCommerce du thème :
+
+wp-content/themes/shoptimizer/woocommerce/single-product/
+
+
+Fichiers à chercher spécifiquement :
+
+single-product.php
+content-single-product.php
+Dans le dossier woocommerce/single-product/ cherchez des fichiers comme :
+
+product-image.php
+product-summary.php
+add-to-cart/variable.php (pour les variations)
+
+
+
+
+
+Comment procéder :
+
+Via FTP/cPanel : Naviguez vers wp-content/themes/shoptimizer/ et cherchez ces fichiers
+Via WordPress Admin :
+
+Allez dans Apparence > Éditeur de thème
+Sélectionnez Shoptimizer
+Cherchez dans la liste des fichiers
+
+
+Via un plugin comme File Manager
+
+Une fois que tu as trouvé le bon fichier (probablement single-product.php ou un fichier dans woocommerce/single-product/), copie-moi son contenu complet.
+Aussi, peux-tu me dire si tu vois des fichiers dans le dossier woocommerce/single-product/ ? Car Shoptimizer peut diviser le template en plusieurs parties.
+Dis-moi ce que tu trouves et je pourrai modifier juste la partie nécessaire sans casser la mise en page !
